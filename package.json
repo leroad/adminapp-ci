@@ -1,0 +1,53 @@
+{
+  "name": "adminapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && cp index.html dist && cd tools && webpack",
+    "serve": "node tools/serve.js",
+    "open": "open Http://192.168.199.165:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.mentornow.com:2222/web/adminweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://gitlab.mentornow.com/web/adminweb/issues"
+  },
+  "homepage": "http://gitlab.mentornow.com/web/adminweb#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.0",
+    "react-router-redux": "^4.0.4",
+    "redux": "^3.5.2",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "image-webpack-loader": "^1.8.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.0.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
